@@ -14,8 +14,7 @@ pipeline {
  parameters {
    string(name: 'SLACK_CHANNEL', defaultValue: '#deploys', description: '')
    choice(name: 'TYPE', choices: 'aut\ncron\ndata', description: 'Autoscaling, Cron or Data')
-   booleanParam(name: 'LC', defaultValue: false, description: 'Update aws launch configuration with th
-e new ami')
+   booleanParam(name: 'LC', defaultValue: false, description: 'Update aws launch configuration with the new ami')
  }
 
 
