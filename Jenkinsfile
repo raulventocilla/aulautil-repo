@@ -26,7 +26,8 @@ pipeline {
         steps {
             parallel (
                 syntax: { sh "echo check_syntax" },
-                grep: { sh "echo grep_var_dump" }
+                grep: { sh "echo grep_var_dump" },
+                tercero: { sh "echo grep_var_dump" }
             )
         }
       }
