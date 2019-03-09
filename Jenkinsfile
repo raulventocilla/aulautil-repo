@@ -64,7 +64,7 @@ pipeline {
        }
        steps {
          sh "echo hagamos deploy"
-         build job: "another_job", parameters: [
+         build job: "pipeline_prod", parameters: [
             [$class: 'StringParameterValue', name: 'VPC_ID', value: 'vpc-123'],
             [$class: 'StringParameterValue', name: 'SLACK', value: '#deploys']
         ]
