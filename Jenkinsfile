@@ -78,7 +78,7 @@ pipeline {
 
         }
         steps {
-            sh "Aplicamos el cambio"
+            echo "Aplicamos el cambio"
         }
     }
      
