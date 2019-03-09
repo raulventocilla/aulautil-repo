@@ -71,6 +71,17 @@ pipeline {
        }
      }
      
+     stage ('Apply') {
+        input {
+            message "Are you sure?"
+            ok "Yes"
+
+        }
+        steps {
+            sh "Aplicamos el cambio"
+        }
+    }
+     
   }
   
   
