@@ -60,7 +60,7 @@ e new ami')
          }
        }
        steps {
-         sh "echo "
+         sh "echo hagamos deploy"
        }
      }
   }
